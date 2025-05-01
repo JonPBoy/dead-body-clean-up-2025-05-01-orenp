@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +15,34 @@
     <meta name="description" content="Professional crime scene cleanup services specializing in blood stain removal. Fast, friendly, and discreet service available 24/7.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-inter antialiased">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold text-red-500">CleanScene</a>
+                <a href="https://JonPBoy.github.io/dead-body-clean-up-2025-05-01-orenp" class="text-2xl font-bold text-red-500 hover:text-red-400 transition-colors duration-300">CleanScene</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#services" class="hover:text-red-500 transition-colors duration-300">Services</a>
                     <a href="#features" class="hover:text-red-500 transition-colors duration-300">Features</a>
+                    <a href="#testimonials" class="hover:text-red-500 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-red-500 transition-colors duration-300">About</a>
                     <a href="#faq" class="hover:text-red-500 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-red-500 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#services" class="hover:text-red-500 transition-colors duration-300">Services</a>
+                    <a href="#features" class="hover:text-red-500 transition-colors duration-300">Features</a>
+                    <a href="#testimonials" class="hover:text-red-500 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-red-500 transition-colors duration-300">About</a>
+                    <a href="#faq" class="hover:text-red-500 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="hover:text-red-500 transition-colors duration-300">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -32,9 +51,19 @@
         <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590496794008-383c8070b257?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="relative container mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 to-purple-600 bg-clip-text text-transparent">Dead Body Clean-Up</h1>
-                <p class="text-xl md:text-2xl lg:text-3xl text-gray-400 mb-12">Specializing in Blood Stain Removal</p>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 to-purple-600 bg-clip-text text-transparent animate-pulse">Professional Crime Scene Cleanup</h1>
+                <p class="text-xl md:text-2xl lg:text-3xl text-gray-400 mb-12">24/7 Emergency Response | Licensed & Certified Technicians</p>
                 <a href="#contact" class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-red-500/25">Get Immediate Assistance</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+                <div class="space-y-8 text-gray-300">
+                    <p class="leading-relaxed">Founded in 2010, CleanScene emerged from a commitment to provide professional, compassionate cleanup services during life's most challenging moments. Our founder's personal experience with tragedy led to the creation of a company that combines technical expertise with genuine empathy.</p>
+                    <p class="leading-relaxed">Our mission is to restore safety and peace of mind to affected spaces while treating every situation with the utmost respect and discretion. We uphold the core values of integrity, professionalism, and compassion in every service we provide, ensuring that families and businesses can focus on healing while we handle the technical aspects of cleanup and restoration.</p>
+                </div>
             </div>
         </section>
 
@@ -42,37 +71,49 @@
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Service Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
-                        <h3 class="text-xl font-semibold mb-4 text-red-500">Fast Response</h3>
-                        <p class="text-gray-400">24/7 emergency response team ready to assist you immediately</p>
+                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-red-500">24/7 Emergency Response</h3>
+                        <p class="text-gray-400">Our rapid response team arrives within 2 hours, fully equipped to handle any situation professionally and efficiently.</p>
                     </div>
-                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
-                        <h3 class="text-xl font-semibold mb-4 text-red-500">Friendly Service</h3>
-                        <p class="text-gray-400">Compassionate professionals trained to handle sensitive situations</p>
+                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-red-500">Certified Technicians</h3>
+                        <p class="text-gray-400">Our team holds advanced certifications in biohazard cleanup and follows strict OSHA guidelines for safety and thoroughness.</p>
                     </div>
-                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                         <h3 class="text-xl font-semibold mb-4 text-red-500">Complete Discretion</h3>
-                        <p class="text-gray-400">Maintaining privacy and confidentiality in all operations</p>
+                        <p class="text-gray-400">We ensure absolute privacy with unmarked vehicles, plain clothes technicians, and strict confidentiality protocols.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="benefits" class="py-24 px-6">
+        <section id="testimonials" class="py-24 px-6">
             <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Approach</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-red-500">Loving</h3>
-                        <p class="text-gray-400">Handling each situation with care and empathy</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Client Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"CleanScene's rapid response and professional handling of our situation was incredible. Their team arrived within an hour and completed the cleanup with utmost respect and thoroughness."</p>
+                        <p class="text-red-500 font-semibold">- Michael R.</p>
+                        <p class="text-gray-400">Property Manager, Urban Heights</p>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-red-500">Kind</h3>
-                        <p class="text-gray-400">Understanding and supportive throughout the process</p>
+                    <div class="bg-gray-800 p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"In our moment of crisis, the CleanScene team showed exceptional professionalism and compassion. They handled everything efficiently while being incredibly supportive."</p>
+                        <p class="text-red-500 font-semibold">- Sarah L.</p>
+                        <p class="text-gray-400">Business Owner</p>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-red-500">Respectful</h3>
-                        <p class="text-gray-400">Treating every scene with dignity and professionalism</p>
+                    <div class="bg-gray-800 p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"The attention to detail and thoroughness of their work was remarkable. They restored our space completely and handled all insurance documentation professionally."</p>
+                        <p class="text-red-500 font-semibold">- David K.</p>
+                        <p class="text-gray-400">Facility Director</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"Their discretion and professionalism made a difficult situation manageable. The team worked efficiently and kept us informed throughout the process."</p>
+                        <p class="text-red-500 font-semibold">- Jennifer M.</p>
+                        <p class="text-gray-400">Hotel Operations Manager</p>
                     </div>
                 </div>
             </div>
@@ -82,17 +123,25 @@
             <div class="container mx-auto max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="space-y-6">
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">How quickly can you respond?</h3>
-                        <p class="text-gray-400">We offer 24/7 emergency response with typical arrival times under 2 hours.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What is your response time?</h3>
+                        <p class="text-gray-400">We guarantee arrival within 2 hours anywhere in our service area, 24/7/365. Our emergency response team is always ready to deploy.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">Are your services confidential?</h3>
-                        <p class="text-gray-400">Absolutely. We maintain strict confidentiality and discretion in all our operations.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How do you handle confidentiality?</h3>
+                        <p class="text-gray-400">We maintain strict confidentiality protocols, including unmarked vehicles, plain clothes technicians, and secure documentation procedures. All staff sign comprehensive NDAs.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What certifications do your technicians have?</h3>
+                        <p class="text-gray-400">Our technicians hold ABRA certification, OSHA bloodborne pathogen certification, and are trained in advanced biohazard cleanup procedures.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Do you work with insurance companies?</h3>
+                        <p class="text-gray-400">Yes, we work directly with all major insurance providers and can handle all necessary documentation and claims processing on your behalf.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
                         <h3 class="text-xl font-semibold mb-4">What areas do you service?</h3>
-                        <p class="text-gray-400">We provide services throughout the entire metropolitan area and surrounding regions.</p>
+                        <p class="text-gray-400">We provide services throughout the entire metropolitan area and surrounding regions within a 100-mile radius of our headquarters.</p>
                     </div>
                 </div>
             </div>
@@ -101,8 +150,8 @@
         <section id="contact" class="py-24 px-6">
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Us</h2>
-                <p class="text-xl text-gray-400 mb-12">Available 24/7 for emergency assistance</p>
-                <a href="mailto:joe@cleanjoe.com" class="text-2xl font-semibold text-red-500 hover:text-red-400 transition-colors duration-300">joe@cleanjoe.com</a>
+                <p class="text-xl text-gray-400 mb-12">Available 24/7 for emergency assistance. Immediate response guaranteed.</p>
+                <a href="mailto:joe@cleanjoe.com" class="text-2xl font-semibold text-red-500 hover:text-red-400 transition-colors duration-300 transform hover:scale-105 inline-block">joe@cleanjoe.com</a>
             </div>
         </section>
     </main>
@@ -125,8 +174,9 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://JonPBoy.github.io/dead-body-clean-up-2025-05-01-orenp/privacy.html" class="text-gray-400 hover:text-red-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://JonPBoy.github.io/dead-body-clean-up-2025-05-01-orenp/terms.html" class="text-gray-400 hover:text-red-500 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://JonPBoy.github.io/dead-body-clean-up-2025-05-01-orenp/blog.html" class="text-gray-400 hover:text-red-500 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
@@ -139,5 +189,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
